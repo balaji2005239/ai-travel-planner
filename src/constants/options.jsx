@@ -1,7 +1,8 @@
 export const SelectTravelersList = [
     { id: 1, title: "Just Me", desc: "Embark on a solo adventure", icon: "🤵", people: "1" },
     { id: 2, title: "Couple", desc: "Romantic getaway for two", icon: "🧑‍🤝‍🧑", people: "2" },
-    { id: 3, title: "Family", desc: "Fun-filled family vacation", icon: "👨‍👩‍👧‍👦", people: "3+" }
+    { id: 3, title: "Family", desc: "Fun-filled family vacation", icon: "👨‍👩‍👧‍👦", people: "3-5" },
+    { id: 4, title: "Friends", desc: "For the lore", icon: "🫂", people: "5-8" }
 ];
 
 export const SelectBudgetOptions = [

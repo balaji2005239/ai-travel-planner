@@ -9,6 +9,7 @@ function Header() {
                 <a href="/create-trip">Create Trip</a>
                 <a href="/about">About</a>
                 <a href="/contact">Contact</a>
+                <a href="/">WanderMind AI</a>
             </div>
             <div>
                 <button>Sign In</button>

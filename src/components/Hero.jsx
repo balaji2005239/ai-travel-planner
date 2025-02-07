@@ -7,26 +7,19 @@ import beaches from '../images/beaches.jpg';
 import hiking from '../images/hiking.jpg';
 import cruise from '../images/cruise.jpg';
 import leaf from '../images/leaf.png';
+
 function Hero() {
     return (
         <div className='MainContainer'>
             <div className='introBody'>
-                <h2 className='text1'>Unforgettable</h2>
-                <div className='text-container'>
-                    <h2 className='text2'>travel</h2>
-                    <h2 className='text3'>Experiences</h2>
-                </div>
-                <div className='buttonContainer'>
-                    <p>Your dedicated travel planner and curator, <br /> crafting personalized itineraries to match your preferences and budget.</p>
-                    <Link to='/create-trip'>
-                        <button>Create Trip</button>
-                    </Link>
+                <div className="textContainer1">
+                    <h1>WanderWise</h1>
+                    <h3>Seamlessly Plan, Effortlessly Explore – Smart Travel, Unforgettable Adventures. </h3>
                 </div>
             </div>
             <div className='activitiesContainer'>
                 <div className='heading'>
-                    <div className='textContainer'>
-                        <h2 className='text4'>Plan Your trip</h2>
+                    <div className='textContainer tact'>
                         <h1 className='text5'>Let us plan you a <br /> perfect Holiday</h1>
                     </div>
                     <img src={leaf} alt="" />
@@ -53,6 +46,28 @@ function Hero() {
                         <h3>Cruise</h3>
                     </div>
                 </div>
+
+                <div className='sec3'>
+                    <div className='wandermind'>
+                        <h1>WanderMind AI 🤖</h1>
+                        <h3>Unable to decide your dream location?</h3>
+                        <h3>No Worries, We got your back! </h3>
+                        <h3>Try our brand new AI Freature <span className='wantxt'> WanderMind AI</span></h3>
+                        <button>WanderMind AI</button>
+                    </div>
+                    <div className='genTrip'>
+                        <h1>AI TRIP PLANNER</h1>
+                        <h3>Personalized Recommendations – Tailored just for you. <br />
+                            🌍 Explore Hidden Gems <br />
+                            ⏳ Save Time <br />
+                            ✨ Start Your Journey with AI-Powered Precision! ✨
+                        </h3>
+                        <Link to={'/create-trip'} >
+                            <button>CREATE TRIP</button>
+                        </Link>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

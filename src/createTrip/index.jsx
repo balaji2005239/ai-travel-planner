@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './createTrip.css';
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
-import { SelectBudgetOptions } from '../constants/options';
+import { SelectBudgetOptions, SelectTravelersList } from '../constants/options';
 
 function CreateTrip() {
     const [place, setPlace] = useState();
@@ -49,13 +49,27 @@ function CreateTrip() {
                                     <div key={index} className="budgetCard">
                                         <h2>{item.icon}</h2>
                                         <h2>{item.title}</h2>
-                                        <p className="desc">{item.desc}</p> {/* Apply the 'desc' class here */}
+                                        <p className="desc">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
+                            <div className="people">
+                                <h2>Who is your travel buddy for your next adventure?</h2>
+                                <div className="peopleContainer">
+                                    {SelectTravelersList.map((item, index) => (
+                                        <div key={index} className="peopleCard">
+                                            <h2>{item.icon}</h2>
+                                            <h2>{item.title}</h2>
+                                            <p className="desc">{item.desc}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                <button>Generate Trip</button>
             </div>
         </div>
     );
