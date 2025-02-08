@@ -5,6 +5,8 @@ import { SelectBudgetOptions, SelectTravelersList } from '../constants/options';
 
 function CreateTrip() {
     const [place, setPlace] = useState();
+    const [formData, setFormData] = useState([]);
+
     return (
         <div className="Container">
             <div className="contentContainer">
