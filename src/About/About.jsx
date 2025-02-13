@@ -24,7 +24,7 @@ const About = () => {
             <div className="about-section">
                 <h2>Our Mission</h2>
                 <p>
-                    At WanderWise, we aim to make travel planning **stress-free** and **enjoyable**.
+                    At WanderWise, we aim to make travel planning <strong>stress-free</strong> and <strong>enjoyable</strong>.
                     Whether you're an adventure seeker or a leisure traveler, we provide you with the
                     best insights and tools to explore the world with confidence.
                 </p>

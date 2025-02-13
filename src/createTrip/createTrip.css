@@ -10,6 +10,10 @@ body {
     max-height: 100%;
 }
 
+input {
+    color: black;
+}
+
 .contentContainer {
     margin-left: 220px;
     width: 1000px;
@@ -128,4 +132,14 @@ body {
     margin-left: 850px;
     width: 150px;
     height: 50px;
+}
+
+.selectedCard {
+    border: 2px solid #ccc;
+    /* Highlight border */
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Light blue background */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    transition: all 0.3s ease-in-out;
 }
